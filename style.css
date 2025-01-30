@@ -1,0 +1,76 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, black, darkred);
+    color: white;
+    text-align: center;
+}
+
+/* Animated Akatsuki Clouds */
+.clouds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://upload.wikimedia.org/wikipedia/en/9/94/Akatsuki_Cloud.svg') repeat;
+    opacity: 0.1;
+    animation: moveClouds 30s linear infinite;
+}
+@keyframes moveClouds {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 1000px; }
+}
+
+/* Title Styles */
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, darkred, black);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px red;
+}
+
+/* Members Section */
+.members {
+    margin: 50px 0;
+}
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.member {
+    background: red;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+.member:hover {
+    background: darkred;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Mission Section */
+.mission {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.7;
+}
